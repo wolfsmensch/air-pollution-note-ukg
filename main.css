@@ -2,6 +2,7 @@ body {
     color: #212f3c;
     font-family: sans-serif;
     padding: 50px 0 50px 0;
+    margin: 0;
 }
 
 h1 {
@@ -27,4 +28,27 @@ ul.notes-list ul li {
 
 ul.notes-list ul li:last-child {
     margin-bottom: 0;
+}
+
+@media screen and (max-width: 576px) {
+    h1 {
+        width: 100%;
+        padding: 0 15px 0 30px;
+        font-size: 1.35em;
+        text-align: left;
+    }
+
+    h2 {
+        font-size: 1.25em;
+    }
+
+    ul.notes-list {
+        line-height: 1.75;
+        padding: 0 15px 0 30px;
+    }
+
+    ul.notes-list p,
+    ul.notes-list ul {
+        margin-left: 0;
+    }
 }
